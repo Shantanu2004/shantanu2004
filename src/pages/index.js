@@ -1,10 +1,10 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Icon, Box, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Icon, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, StackItem, Stack, Formspree, Section } from "@quarkly/components";
-import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { Override, StackItem, Stack, Section } from "@quarkly/components";
+import { MdEmail, MdPhone } from "react-icons/md";
+import { FaFacebookF, FaAmazon } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -24,25 +24,7 @@ export default (() => {
 			<Stack>
 				<StackItem width="50%" md-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
-					<Box
-						padding="0 0 0 64px"
-						sm-padding="64px 0 0 0"
-						margin="32px 0 0 0"
-						max-width="360px"
-						position="relative"
-					>
-						<Text as="p" margin="6px 0" font="--headline3">
-							4998 Hanover Street, New York, 10011
-						</Text>
-						<Icon
-							position="absolute"
-							size="48px"
-							top="0"
-							left="0"
-							category="md"
-							icon={MdLocationOn}
-						/>
-					</Box>
+					<Text as="h4" margin="6px 0" font="--base" />
 					<Text as="h4" margin="6px 0" font="--base">
 						Visit us
 					</Text>
@@ -66,7 +48,7 @@ export default (() => {
 						</Text>
 						<Text as="p" margin="6px 0" font="--headline3">
 							<Link href="mailto:hello@company.com" text-decoration="none" hover-text-decoration="underline" color="--light">
-								hello@company.com
+								Shantanutelang2004@gmail.com
 							</Link>
 						</Text>
 					</Box>
@@ -83,9 +65,7 @@ export default (() => {
 							Call us
 						</Text>
 						<Text as="p" margin="6px 0" font="--headline3">
-							+1 (234) 567-89-00
-							<br />
-							+1 (234) 567-89-00
+							+91 9850791028
 						</Text>
 					</Box>
 					<Box
@@ -108,17 +88,7 @@ export default (() => {
 						/>
 						<Icon
 							category="fa"
-							icon={FaTwitter}
-							width="48px"
-							height="48px"
-							size="24px"
-							margin-right="16px"
-							background="--color-primary"
-							border-radius="50%"
-						/>
-						<Icon
-							category="fa"
-							icon={FaLinkedinIn}
+							icon={FaAmazon}
 							width="48px"
 							height="48px"
 							size="24px"
@@ -137,38 +107,9 @@ export default (() => {
 						background="--color-primary"
 					>
 						<Text as="h3" font="--headline3" margin="0 0 20px 0">
-							Leave us message
+							U came to us it wouldbe prould to me
+							<br />
 						</Text>
-						<Formspree>
-							<Stack gap="16px">
-								<StackItem width="100%">
-									<Override slot="StackItemContent" flex-direction="column" />
-									<Text font="--base" margin="0 0 4px 0">
-										Name
-									</Text>
-									<Input width="100%" name="name" />
-								</StackItem>
-								<StackItem width="100%">
-									<Override slot="StackItemContent" flex-direction="column" />
-									<Text font="--base" margin="0 0 4px 0">
-										Email
-									</Text>
-									<Input width="100%" type="email" name="email" />
-								</StackItem>
-								<StackItem width="100%">
-									<Override slot="StackItemContent" flex-direction="column" />
-									<Text font="--base" margin="0 0 4px 0">
-										Message
-									</Text>
-									<Input as="textarea" rows="4" width="100%" name="message" />
-								</StackItem>
-								<StackItem width="100%">
-									<Button background="--color-dark">
-										Send
-									</Button>
-								</StackItem>
-							</Stack>
-						</Formspree>
 					</Box>
 				</StackItem>
 			</Stack>
